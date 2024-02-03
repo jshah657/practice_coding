@@ -28,4 +28,6 @@ age = 31
 jobRole = "Senior system integrator"
 company = "Arthrex"
 education = "Masters of Information Systems"
-print("We are super excited to announce that we have hired a new employee in our team. I would like to introduce " + firstName, lastName)
+# See following variable called welcomeMessage, it calls various variables within string message by applying format function. 
+welcomeMessage = ("We are super excited to announce that we have hired a new employee in our team. I would like to introduce {} {}. {} is {} years old.").format(firstName, lastName, firstName, age)
+print(welcomeMessage) 
