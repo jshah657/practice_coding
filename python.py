@@ -31,3 +31,29 @@ education = "Masters of Information Systems"
 # See following variable called welcomeMessage, it calls various variables within string message by applying format function. 
 welcomeMessage = ("We are super excited to announce that we have hired a new employee in our team. I would like to introduce {} {}. {} is {} years old.").format(firstName, lastName, firstName, age)
 print(welcomeMessage) 
+# Another way to add variables to a string is to use f before sentence. For example: 
+newWelcomeMessage = f"We are super excited to announce that we have hired a new employee in our team. I would like to introduce {firstName} {lastName}. {firstName} is {age} years old."
+print(newWelcomeMessage)
+
+#let's understand number types: 
+a = 99 
+print(type(a))
+b = 99.0
+print(type(b))
+
+#You can also use the following to generate a number into a float. 
+print(float(1))
+
+# something interesting I have learned about division is to generate an output in integer, you can use two back slashes and for float you can use one. 
+d = 99 
+e = 11 
+ans = d / e
+print(ans)
+
+# Example of quick calculation.
+message_1 = "Lets find out how old are you?"
+age_number = input("Enter the year you were born ")
+current_year = 2024
+answer = int(current_year) - int(age_number)
+print(message_1)
+print(f"You are only {answer} years old. You are still young!")
