@@ -50,10 +50,31 @@ e = 11
 ans = d / e
 print(ans)
 
-# Example of quick calculation.
-message_1 = "Lets find out how old are you?"
-age_number = input("Enter the year you were born ")
-current_year = 2024
-answer = int(current_year) - int(age_number)
-print(message_1)
-print(f"You are only {answer} years old. You are still young!")
+#Let's try to make tomorrow's dinner decision. 
+dinnerList = ["Taco Bell", "Chiken Tikka", "Chipotle"]
+for item in dinnerList:
+        if item == dinnerList[0]:
+                print("Taco Bell")
+        else:
+                print(dinnerList[1:])
+                
+#Let's check ID to see if customer is able to purchase alcahol. Use the following pseudocode
+# list of the items in the cart: 
+cart = [{
+        "name":"banana",
+        "price":"2 USD",
+        "ageRes":"No"
+},
+{
+        "name":"titos",
+        "price":"29 USD",
+        "ageRes":"yes"
+}]
+print(cart)
+#Cashier starts to scan. Determine that if there is an alachol then ask for ID if not then allow customer to purchase rest of their groceries. 
+for item in cart: 
+       print(item)
+       if item == "titos":
+               print("Show me your ID")
+       else:
+               print("Your total is $32")
